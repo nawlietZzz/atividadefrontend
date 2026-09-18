@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Atletismo</title>
+
+<style>
+:root {
+    --preto: #111111;
+    --vermelho: #d62828;
+    --vermelho-medio: #f04a4a;
+    --vermelho-claro: #ffe5e5;
+    --fundo: #f7f7f7;
+    --branco: #ffffff;
+    --texto: #222222;
+    --borda: #dddddd;
+    --sombra: rgba(0, 0, 0, 0.12);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7;
+    color: var(--texto);
+    background: var(--fundo);
+}
+
+header {
+    background: linear-gradient(135deg, var(--preto), var(--vermelho));
+    color: var(--branco);
+    text-align: center;
+    padding: 48px 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    max-width: 700px;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+
+nav {
+    background: var(--branco);
+    border-bottom: 1px solid var(--borda);
+    box-shadow: 0 2px 8px var(--sombra);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 12px 20px;
+}
+
+nav a {
+    display: block;
+    color: var(--preto);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 6px;
+}
+
+nav a:hover {
+    background: var(--vermelho-claro);
+    color: var(--vermelho);
+}
+
+main {
+    width: min(1100px, 92%);
+    margin: 40px auto;
+}
+
+section {
+    background: var(--branco);
+    padding: 32px;
+    margin-bottom: 30px;
+    border: 1px solid var(--borda);
+    border-radius: 12px;
+    box-shadow: 0 6px 18px var(--sombra);
+}
+
+h2 {
+    color: var(--preto);
+    margin-bottom: 18px;
+    font-size: 1.8rem;
+}
+
+h3 {
+    color: var(--vermelho);
+    margin: 24px 0 10px;
+}
+
+p {
+    margin-bottom: 16px;
+}
+
+ul,
+ol {
+    margin: 12px 0 18px 24px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+.destaque {
+    background: var(--vermelho-claro);
+    border-left: 5px solid var(--vermelho);
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+figure {
+    margin: 0;
+    background: var(--fundo);
+    border: 1px solid var(--borda);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+figure img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+}
+
+figcaption {
+    padding: 12px 14px;
+    font-size: 0.9rem;
+    color: var(--preto);
+}
+
+footer {
+    background: var(--preto);
+    color: var(--branco);
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 4px 0;
+}
+
+@media (max-width: 700px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    section {
+        padding: 22px;
+    }
+
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+
+    figure img {
+        height: 230px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header id="inicio">
+    <h1>Atletismo</h1>
+    <p>Velocidade, resistência, disciplina e dedicação para alcançar novos limites.</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#provas">Provas</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#contato">Contato</a></li>
+    </ul>
+</nav>
+
+<main>
+
+<section id="sobre">
+    <h2>O que é o Atletismo?</h2>
+
+    <p>
+        O atletismo é um esporte formado por diversas modalidades,
+        envolvendo corrida, saltos, lançamentos e arremessos.
+    </p>
+
+    <p>
+        É considerado um dos esportes mais tradicionais e exige
+        treinamento, disciplina, técnica e preparação física.
+    </p>
+
+    <div class="destaque">
+        <p>
+            <strong>Atletismo:</strong> superar limites através de
+            treinamento, dedicação e evolução constante.
+        </p>
+    </div>
+</section>
+
+<section id="provas">
+    <h2>Principais Provas</h2>
+
+    <h3>Corridas</h3>
+    <p>
+        As corridas incluem provas de velocidade, meio-fundo,
+        fundo e revezamentos.
+    </p>
+
+    <h3>Saltos</h3>
+    <p>
+        As principais provas são salto em distância,
+        salto triplo, salto em altura e salto com vara.
+    </p>
+
+    <h3>Lançamentos e Arremessos</h3>
+    <p>
+        Incluem lançamento de dardo, disco, martelo e
+        arremesso de peso.
+    </p>
+
+    <h3>Algumas provas de corrida</h3>
+
+    <ul>
+        <li>100 metros</li>
+        <li>200 metros</li>
+        <li>400 metros</li>
+        <li>800 metros</li>
+        <li>1500 metros</li>
+        <li>5000 metros</li>
+    </ul>
+
+    <h3>Características importantes</h3>
+
+    <ol>
+        <li>Disciplina</li>
+        <li>Treinamento</li>
+        <li>Determinação</li>
+    </ol>
+</section>
+
+<section id="galeria">
+    <h2>Galeria</h2>
+
+    <p>
+        Imagens relacionadas ao atletismo e às competições.
+    </p>
+
+    <div class="galeria">
+
+        <figure>
+            <img src="COLOQUE-AQUI-A-IMAGEM-1" alt="Atletismo">
+            <figcaption>Competição de atletismo.</figcaption>
+        </figure>
+
+        <figure>
+            <img src="COLOQUE-AQUI-A-IMAGEM-2" alt="Corrida">
+            <figcaption>Prova de corrida.</figcaption>
+        </figure>
+
+        <figure>
+            <img src="COLOQUE-AQUI-A-IMAGEM-3" alt="Pista de atletismo">
+            <figcaption>Pista de atletismo.</figcaption>
+        </figure>
+
+    </div>
+</section>
+
+<section id="contato">
+    <h2>Conclusão</h2>
+
+    <p>
+        O atletismo é um esporte que reúne diferentes capacidades
+        físicas e exige dedicação para alcançar bons resultados.
+    </p>
+
+    <p>
+        Além da competição, a prática do esporte contribui para
+        saúde, disciplina e desenvolvimento pessoal.
+    </p>
+</section>
+
+</main>
+
+<footer>
+    <p>Atletismo — Superando limites.</p>
+    <p>© 2026</p>
+</footer>
+
+</body>
+</html>
